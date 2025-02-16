@@ -1,0 +1,39 @@
+.decoration {
+  font-size: 48px;
+  /* フォントサイズ */
+  color: red;
+  /* 色の指定は複数種類やり方がある
+  color: #ff0000;⇒カラーコード。これは赤らしい
+  rgba(255, 0, 0, 0.5)⇒rgbにAlpha（アルファ値＝透明度）を加えたもの。
+                        CSSでは0（完全な透明）～1（完全な不透明）で指定する
+   */
+  font-weight: bold;
+  /* フォントを太字に */
+  font-family: "Yu Gothic";
+  /* フォントの種類 */
+  font-style: italic;
+  /* 文字を斜体に */
+  line-height: 9;
+  /* 行間変更 */
+  letter-spacing: 1.5em;
+  /* 字間変更 */
+  text-decoration: underline;
+  /* 下線を引く */
+  text-decoration: line-through;
+  /* 取り消し線※下線より下に入力されているのでこちらが優先 */
+  border: solid 3px blue;
+  /* 実線で囲む　点線=dotted  破線=dashed  二重線=double */
+  border-top: double 5px brown;
+  border-bottom: dotted 3px yellow;
+  /* それぞれ上に線、下に線。左=left  右=right */
+  background-color: lightgreen;
+  /* 背景色 */
+  text-shadow: 5px 10px 5px gray;
+  /* 影をつける。左のpxから、影の右方向の長さ　影の下方向の長さ　影のボケ具合　影の色 */
+  text-align: center;
+  /* 文字の位置 */
+}
+
+.text-bold {
+  font-weight: bold;
+}
