@@ -1,0 +1,38 @@
+/* border:本文の周りにある囲み。
+     padding:boederの内側の余白。
+     marjin:borderの外側の余白。 */
+
+
+  /* 余白は、上下左右個別で設定可。
+     ≪上右下左と、時計回りに設定≫
+  　 padding: 20px 15px 10px 5px; 
+
+     ≪上下・左右のペアで設定≫
+     margin: 40px 20px;
+     
+     ≪一部のみ設定≫
+     top,right,bottom,leftを使う。
+     marjin-left: 10px;*/
+
+  /* ≪marjinの相殺≫
+     上下に限り、pxの小さいほ方が0となり、大きい方のみ反映される
+     どちらも同じ値の場合、どちらかのみ反映されている */
+
+
+#first-paragraph {
+  margin-bottom: 30px;
+  border: solid 5px yellow;
+}
+
+#second-paragraph {
+  margin-top: 10px;
+  border: solid 5px yellow;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

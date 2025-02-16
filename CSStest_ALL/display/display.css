@@ -1,0 +1,105 @@
+/* displayについて
+   要素の表示形式をそのようにするか、がdisplayプロパティ。
+   html要素ごとにどのプロパティかは決まっている。
+   例：block⇒p,div,main,nav,bodyなど
+       inline⇒a,span,img,brなど
+       inline-block⇒input,button,textareaなど
+       none⇒head,title,meta,linkなど */
+
+
+/* ≪blockについて≫
+　 要素が縦に並んでいく
+   width,heightプロパティで幅と高さを指定できる
+   padding,marginプロパティで上下左右に余白を指定できる */
+#first-paragraph {
+  padding: 100px;
+  background-color: yellow;
+}
+#second-paragraph {
+  margin: 100px;
+  background-color: orange;
+}
+#third-paragraph {
+  padding: 50px;
+  margin: 50px;
+  background-color: pink;
+}
+
+/* ≪inlineについて≫
+   要素が横に並んでいく
+   幅と高さを指定できない
+   左右の余白のみ指定できる */
+#inline p {
+  background-color: yellow;
+}
+#first-span {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  background-color: lightblue;
+  /* 幅と高さを指定いるが反映されない
+     paddingは反映されているように見えるが画面を狭めると重なって表示が崩れるので、
+     左右だけにしましょう */
+}
+/* 以下second,thirdでは正しく設定しているので、表示崩れなどしない */
+#second-span {
+  margin: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: lightgreen;
+}
+#third-span {
+  margin: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: lightgray;
+}
+
+/* inline-blockについて */
+/* それぞれの要素にinline-block要素を加えることで横に並ぶ。
+   ここではデフォルトプロパティがblockのdivをinline-blockへ性質変化させている。
+   fourthは設定していないので縦に並んでいる */
+   #first-div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+  }
+  #second-div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgreen;
+  }
+  #third-div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    margin: 30px;
+    background-color: lightgray;
+  }
+  #fourth-div {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    margin: 40px;
+    background-color: yellow;
+  }
+
+/* noneについて 
+   noneに設定したものが非表示になる*/
+#first-none {
+  background-color: yellow;
+}
+#second-none {
+  display: none;
+  background-color: orange;
+}
+#third-none {
+  background-color: pink;
+}

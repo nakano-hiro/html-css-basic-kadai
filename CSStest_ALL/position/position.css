@@ -1,0 +1,74 @@
+/* 【positionについて】
+    要素をどのように配置するか。
+    できること例：
+    スクロールしてもナビゲーションメニューの画面を固定できる
+    画像内のテキストを自由に配置できる*/
+
+/* ≪relative≫
+   本来の表示位置を基準にした相対位置 */
+#first-div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+#second-div {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+#third-div {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+/* ≪absolute≫
+   親要素を基準にした絶対位置
+   ※基準にしたい親要素にposition:relativeを指定しておく必要あり。 */
+.absolute {
+  position: relative;
+  height: 200px;
+  background-color: lightcyan;    
+}
+#first-ab {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+#second-ab {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+#third-ab {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+
+/* ≪fixed≫
+   画面を基準にした絶対位置に配置したうえで、
+   スクロールしても位置を固定できる */
+   .fixed {
+    height: 2000px;
+    background-color: lightcyan;    
+ }
+ .child {
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+ }
+ .background {
+    height: 2000px;
+    background-color: honeydew;    
+ }
