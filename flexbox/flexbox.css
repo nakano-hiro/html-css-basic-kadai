@@ -1,0 +1,68 @@
+/* 【flexbox】 
+    柔軟にレイアウトを組めるcssのレイアウト手法。
+    PCでは横3列にしたいけどスマホでは横１列にしたいなどが簡単に実現できる。*/
+
+/* 【基本的な使い方】
+    1,HTMLファイルでコンテナ（親要素）とアイテム（子要素）を作成する
+    2,CSSファイルでコンテナにdisplay:flex;を指定する
+    3,CSSファイルでコンテナとアイテムそれぞれにプロパティを指定して調整する */
+
+
+/* ≪コンテナに指定できるプロパティ≫ 
+   flex-directionプロパティ：アイテムの並び順を指定
+   flex-wrapプロパティ：アイテムの折り返しを指定
+   flex-flowプロパティ：アイテムの並び順と折り返しを一括で指定
+   justify-contentプロパティ：アイテムの横方向（主軸）の揃え方を指定
+   align-itemsプロパティ：アイテムの縦方向（交差軸）の揃え方を指定
+   align-contentプロパティ：アイテムを複数行にしたときの縦方向（交差軸）の揃え方を指定*/
+  
+   .flexbox-container {
+      display: flex;
+      padding: 5px;
+      background-color: lightcyan;
+  }
+  .flexbox-item {
+      padding: 5px;
+      margin: 5px;
+      background-color: orange;
+  }
+
+
+/* ≪アイテムに指定できるプロパティ≫
+   orderプロパティ：アイテムの並び順を指定
+   flex-growプロパティ：アイテムの伸長係数（どれくらい伸びるか）を指定
+   flex-shrinkプロパティ：アイテムの縮小係数（どれくらい縮むか）を指定
+   flex-basisプロパティ：アイテムの幅の初期サイズを指定
+   flexプロパティ：アイテムの伸長係数、縮小係数、幅の初期サイズを一括で指定
+   align-selfプロパティ：アイテムの縦方向（交差軸）の揃え方を指定 */
+   
+   #item01 {
+       order: 1;
+       /* 並べかえ */
+   }
+   #item02 {
+       flex-grow: 1;
+       /* どれくらい伸びるか */
+   }
+   #item03 {
+       flex-shrink: 4;
+       /* どれくらい縮むか */
+   }
+   #item04 {
+       flex-basis: 150px;
+       /* 元の幅サイズ変更 */
+   }
+   #item05 {
+       flex: 1 1 300px;
+       /* glow,shrink,basisを一括変更
+       　 元の値：flex: o 1 auto */
+   }
+   #item06 {
+       order: 2;
+   }
+   #item07 {
+       order: 3;
+   }
+   #item08 {
+       order: 4;
+   }
