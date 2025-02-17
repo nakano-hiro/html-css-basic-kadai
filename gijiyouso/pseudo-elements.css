@@ -1,0 +1,28 @@
+/* 【疑似要素】
+    htmlを編集しなくても、文字などに追記等を行える手法 
+    ::before：要素の直前にコンテンツを追加する
+    ::after：要素の直後にコンテンツを追加する
+    ::first-letter：要素の最初の文字を装飾する
+    ::first-line：要素の最初の行を装飾する */
+
+h1::before {
+  /* contentの後に、追加したいものを入力 */
+  content: "◆";
+  color: orange;
+}
+h1::after {
+  /* 同上 */
+  content: "■";
+  color: pink;
+}
+p::first-letter {
+  /* 文字装飾のプロパティを使える */
+  font-size: 24px;
+  font-weight: bold;
+}
+p::first-line {
+  /* 同上 */
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+}

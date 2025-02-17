@@ -1,0 +1,46 @@
+/* 【疑似クラス】
+    要素が特定の状態のときに適用できるセレクタ
+    例：リンクにアクセス済みのとき、ボタンの上にマウスカーソルが乗っている、など
+    ※疑似要素は::だが、疑似クラスは:。
+    
+    :link：未訪問のリンク（a要素など）にスタイルを適用する
+    :visited：訪問済みのリンク（a要素など）にスタイルを適用する
+    :hover：要素の上にマウスのカーソルが乗っているときにスタイルを適用する
+    :active：要素がアクティブ状態（マウスを左クリックしてから離すまで）のときにスタイルを適用する
+    
+    :nth-child(n)：親要素内にあるすべての要素の中で、n番目の要素にスタイルを適用する
+    :nth-of-type(n)：親要素内にある同じ要素の中で、n番目の要素にスタイルを適用する
+    :not(A)：親要素内にあるAという要素以外にスタイルを適用する 
+    */
+
+.parent {
+  background-color: whitesmoke;
+}
+/* 適用したいセレクタの後に:●●のように加える */
+
+a:link {
+  color: orange;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: purple;
+}
+a:active {
+  color: red;
+}
+
+/* ()内は、親要素内にあるすべての要素の中で何番目か */
+div p:nth-child(4) {
+  color: red;
+}
+/* ()内は、親要素内にある同じ要素の中で何番目か */
+div p:nth-of-type(4) {
+  color: blue;
+}
+/* 指定したセレクト以外に適用。複数選択もできた */
+.parent :not(p, a) {
+  color: orange;
+  text-decoration: line-through;
+}

@@ -1,0 +1,21 @@
+div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: orange;
+}
+/* 以下メディアクエリを使用するときは、htmlでビューポートの設定も必要 
+   デベロッパーツールで他デバイスでの表示具合を確認可能*/
+@media screen and (max-width: 768px) {
+  div {
+    display: block;
+  }
+}
+設定できるプロパティ
+width（横幅）	device-width（デバイスの横幅）または数値
+height（高さ）	device-height（デバイスの高さ）または数値
+initial-scale（ズームの初期倍率）	数値
+minimum-scale（ズームの最小倍率）	数値
+maximum-scale（ズームの最大倍率）	数値
+user-scalable（ズームできるかどうか）	yesまたはno
