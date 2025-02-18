@@ -1,0 +1,6 @@
+GitHub上でつながっているリポジトリ名
+html-css-basic kadai
+簡易リポジトリ名
+origin
+
+Shift+Alt+Fでインデント自動生成
