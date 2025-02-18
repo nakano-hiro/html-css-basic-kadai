@@ -37,7 +37,7 @@ h2::before {
   content: "●";
   color: rgb(239, 111, 139);
 }
-div p:nth-of-type(1)::first-letter {
+div p:nth-of-type(2)::first-letter {
   font-weight: bold;
   color: rgb(97, 206, 249);
 }
