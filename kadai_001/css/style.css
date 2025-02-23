@@ -1,0 +1,27 @@
+.Allheader {
+  display: flex;
+
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-weight: bold;
+  font-size: 30px;
+
+  margin: 10px 180px;
+}
+.AboutWorks {
+  display: flex;
+  justify-content: flex-end;
+/* contentの幅を端まで広げることで端に寄せれた */
+  width: 100%;
+}
+#MyProfile {
+border: solid 1px black;
+padding: 2px 15px;
+}
+#About {
+  position: relative;
+  right: 20px;
+}
