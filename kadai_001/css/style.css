@@ -1,31 +1,98 @@
-.Allheader {
-  display: flex;
-
+body {
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.all-header {
+  display: flex;
+  /* ブロックを均等に配置することで左右に配置 */
+  justify-content: space-between;
 
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
 
-  margin: 10px 180px;
+  /* 幅を指定することで余白を作らせる */
+  /* marginautoすることで余白を左右に均等にふる */
+  max-width: 900px;
+  margin: 0px auto;
 }
-.AboutWorks {
+
+.about-works {
   display: flex;
   justify-content: flex-end;
-/* contentの幅を端まで広げることで端に寄せれた */
-  width: 100%;
+  /* contentの幅を端まで広げることで端に寄せれた */
+
 }
-#MyProfile {
-border: solid 1px black;
-padding: 2px 15px;
+
+#myprofile {
+  border: solid 1px black;
+  padding: 2px 15px;
 }
-#About {
+
+#header-about {
   position: relative;
   right: 20px;
 }
-#camera {
+
+#camera-img {
   width: 100%;
   height: auto;
+}
+
+
+
+#main-about {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 50px 0px;
+}
+
+.main-shousai {
+  display: flex;
+  /* justify-content: space-between; */
+
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+#human {
+  /* width: 100%; */
+  /* height: auto; */
+
+  margin-right: 100px;
+
+  /* 画像を円形にする */
+  border-radius: 50%;
+}
+
+#name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.shousai {
+  margin-left: 40px;
+}
+
+
+#main-works {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 50px 0px;
+}
+
+.main-works {
+  display: flex;
+  justify-content: center;
+}
+
+.main-works img{
+  width: 250px;
+  height: auto;
+
+  margin: 0px 10px;
 }
