@@ -6,7 +6,7 @@ body {
 }
 
 .all-header {
-  display: flex;
+  /* display: flex; */
   /* ブロックを均等に配置することで左右に配置 */
   justify-content: space-between;
 
@@ -15,6 +15,13 @@ body {
 
   /* 幅を指定することで余白を作らせる */
   /* marginautoすることで余白を左右に均等にふる */
+  /* max-width: 900px; */
+  /* margin: 0px auto; */
+}
+
+.content {
+  display: flex;
+
   max-width: 900px;
   margin: 0px auto;
 }
@@ -43,25 +50,17 @@ body {
 
 
 
-#main-about {
+.title {
+  /* コピペ＝まとめられる。class使う */
   text-align: center;
   font-weight: bold;
   font-size: 40px;
   margin: 50px 0px;
 }
 
-.main-shousai {
-  display: flex;
-  /* justify-content: space-between; */
 
-  max-width: 900px;
-  margin: 0px auto;
-}
 
 #human {
-  /* width: 100%; */
-  /* height: auto; */
-
   margin-right: 100px;
 
   /* 画像を円形にする */
@@ -73,26 +72,18 @@ body {
   font-size: 25px;
 }
 
-.shousai {
-  margin-left: 40px;
-}
-
-
-#main-works {
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  margin: 50px 0px;
-}
-
-.main-works {
-  display: flex;
-  justify-content: center;
-}
-
-.main-works img{
-  width: 250px;
+#umi, #yama, #mati {
+  width: 280px;
   height: auto;
 
-  margin: 0px 10px;
+  margin: 0px auto;
 }
+
+#copyright {
+text-align: center;
+font-size: 20px;
+
+margin-top: 80px;
+}
+
+

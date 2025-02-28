@@ -15,7 +15,7 @@
 <body>
   <header>
     <!-- ヘッダーは見出しのみ -->
-    <div class="all-header">
+    <div class="all-header content">
       <p id="myprofile">MyProfile</p>
       <div class="about-works">
         <P id="header-about">About</P>
@@ -26,8 +26,8 @@
   <main>
     <img src="images\main.png" alt="カメラ" id="camera-img">
     <section>
-      <p id="main-about">About</p>
-      <div class="main-shousai">
+      <p class="title">About</p>
+      <div class="content">
         <img src="images\about.png" alt="人物" id="human">
         <!-- div shousaiでくくることで子要素を１つにまとめる。 -->
         <div class="shousai">
@@ -42,29 +42,26 @@
       </div>
     </section>
     <section>
-      <p id="main-works">Works</p>
-      <div class="main-works">
-        <div>
+      <p class="title">Works</p>
+      <div class="content">
+        <div id="umi">
           <img src="images\works1.png" alt="海" id="umi">
-          <p>新潟に訪れた際に、日本海の</p><br>
-          <p>雄大さに魅了されて撮影した</p><br>
-          <p>1枚</p>
+          <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
         </div>
-        <div>
+        <div id="yama">
           <img src="images\works2.png" alt="山" id="yama">
-          <p>地元長野の木曽町から撮影し</p><br>
-          <p>た、冠雪した御嶽山</p>
+          <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p> 
         </div>
-        <div>
-          <img src="images\works3.png" alt="町" id="mati ">
-          <p>京都で撮影した、明け方の古</p><br>
-          <p>き良き日本の町並み</p>
+        <div id="mati">
+          <img src="images\works3.png" alt="町" id="mati">
+          <p>京都で撮影した、明け方の古き良き日本の町並み</p> 
         </div>
       </div>
-
     </section>
-
   </main>
+<footer>
+  <p id="copyright">© MyProfile. All rights reserved.</p>
+</footer>
 </body>
 
 </html>
